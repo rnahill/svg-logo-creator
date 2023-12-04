@@ -1,5 +1,7 @@
 // Packages needed for application
 const shapesFile = require('./lib/shapes');
+const generateShapeFile = require('./lib/generateShape')
+import("./lib/generateShape");
 const inquirer = require('inquirer');
 const fs = require('fs');
 
@@ -56,9 +58,12 @@ function writeToFile(fileName, data) {
 async function init() {
 
     const responses = await inquirer.prompt(logoOptions);
-
+  
+    
 }
 
 // Function call to start application
 
 init();
+
+// console.log(generateShape(responses.text, responses.textColor, responses.shapeColor, responses.shape));
