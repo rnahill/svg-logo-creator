@@ -31,7 +31,7 @@ const logoOptions = [
 
 ]
 
-// function to initialize app
+// Function to initialize app
 
 async function init() {
 
