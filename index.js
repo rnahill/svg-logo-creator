@@ -1,5 +1,6 @@
 // Packages needed for application
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 
 // Array of questions for user input
@@ -33,6 +34,18 @@ const logoOptions = [
 
 // Function to create svg file
 
+function writeToFile(fileName, data) {
+
+    fs.writeFile(fileName, data, (err) => {
+
+        if (err) {
+            console.error('Error writing file:', err);
+        } else {
+            console.log('File write successful.');
+        }
+        
+    })
+}
 
 
 
