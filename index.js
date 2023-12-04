@@ -20,7 +20,7 @@ const logoOptions = [
     },
 
     {
-        type: 'input',
+        type: 'list',
         message: 'Choose a shape from the following options:',
         choices: ['triangle', 'circle', 'square'],
         name: 'shape'
