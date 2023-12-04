@@ -20,7 +20,8 @@ const logoOptions = [
 
     {
         type: 'input',
-        message: 'Choose a shape from the following options: circle, triangle, square',
+        message: 'Choose a shape from the following options:',
+        choices: ['triangle', 'circle', 'square'],
         name: 'shape'
     },
 
@@ -43,7 +44,7 @@ function writeToFile(fileName, data) {
         } else {
             console.log('File write successful.');
         }
-        
+
     })
 }
 
