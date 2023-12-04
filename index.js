@@ -9,7 +9,7 @@ const logoOptions = [
     {
         type: 'input',
         message: 'Enter up to 3 characters for logo text.',
-        name: 'characters'
+        name: 'text'
     },
 
     {
