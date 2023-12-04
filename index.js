@@ -31,6 +31,11 @@ const logoOptions = [
 
 ]
 
+// Function to create svg file
+
+
+
+
 // Function to initialize app
 
 async function init() {
