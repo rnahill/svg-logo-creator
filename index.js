@@ -1,7 +1,7 @@
 // Packages needed for application
 
-const { generateShape } = require('./lib/generateShape')
-const { generateSVG } = require('./lib/generateSVG')
+const {generateShape} = require('./lib/generateShape')
+// const { generateSVG } = require('./lib/generateSVG')
 const inquirer = require('inquirer');
 const fs = require('fs');
 
@@ -58,21 +58,13 @@ function writeToFile(fileName, data) {
 async function init() {
 
     const responses = await inquirer.prompt(logoOptions);
+
+    console.log(responses);
   
-    // console.log(responses);
+    generateShape();
 
-    return responses;
-
-    
 }
-
-// Function call to start application
 
 init();
-generateShape();
 
-// console.log(generateShape(responses.text, responses.textColor, responses.shapeColor, responses.shape));
 
-module.exports = {
-    init
-}
